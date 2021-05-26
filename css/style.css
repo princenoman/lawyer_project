@@ -1,0 +1,347 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #204f87;
+	font-family: montserrat;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #528bd1;
+}
+.banner {
+	background-image: url(../images/banner.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.banner h1 {
+	color: #fff;
+	font-size: 65px;
+	text-transform: uppercase;
+	font-family: montserrat;
+	font-weight: bold;
+}
+.content {
+	height: 90vh;
+	align-items: center;
+}
+
+.icon {
+	color: #fff;
+	font-size: 30px;
+	position: absolute;
+	left: 50%;
+	top: 70%;
+	transform: translateX(-50%);
+	animation: updown 1.5s linear infinite;
+	animation-direction: alternate;
+}
+
+@keyframes updown {
+	0% {
+		top: 70%;
+	}
+	100% {
+		top: 75%;
+	}
+}
+.who_we_are {
+}
+
+.who_we_are span {
+	width: 0px;
+	height: 5px;
+	background: #f2622b;
+	display: inline-block;
+	transition: 0.5s all ease-in-out;
+}
+.who_we_are:hover span {
+	width: 50px;
+}
+
+.who_we_are h1 {
+	color: #204f87;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.who_we_are p {
+	font-weight: 400;
+	color: #b0b0b1;
+}
+
+.what_we_do {
+	background-color: #f7f8f8;
+	background-image: url(../images/what_we_do_bg.png);
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 55%;
+}
+.heading {
+}
+.heading span {
+	height: 5px;
+	width: 0px;
+	background: #f2622b;
+	display: block;
+	margin: auto;
+	transition: 0.5s all ease-in-out;
+}
+.what_we_do:hover .heading span {
+	width: 50px;
+}
+.heading h1 {
+	color: #204f87;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+}
+.image {
+	position: relative;
+}
+.image::before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 0%;
+	left: 0%;
+	bottom: 0%;
+
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,2b2f85+100&0+0,1+100 */
+	background: -moz-linear-gradient(
+		top,
+		rgba(125, 185, 232, 0) 0%,
+		rgba(43, 47, 133, 1) 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		top,
+		rgba(125, 185, 232, 0) 0%,
+		rgba(43, 47, 133, 1) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to bottom,
+		rgba(125, 185, 232, 0) 0%,
+		rgba(43, 47, 133, 1) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#2b2f85',GradientType=0 ); /* IE6-9 */
+
+	opacity: 0.5;
+	transition: 0.5s all ease-in-out;
+}
+.image:hover::before {
+	height: 100%;
+}
+.text {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 0.5s all ease-in-out;
+}
+.text h1 {
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+}
+.image:hover .text {
+	opacity: 1;
+	top: 50%;
+}
+.image_icon {
+	position: absolute;
+	top: 80%;
+	left: 45%;
+	color: #fff;
+	font-size: 30px;
+	transform: translateX(-50%);
+	opacity: 0;
+	transition: 0.5s all ease-in-out;
+}
+.image:hover .image_icon {
+	opacity: 1;
+	left: 50%;
+}
+
+.attorney {
+	background-image: url(../images/employee_bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding: 100px 0;
+}
+
+.attorney span {
+	width: 0px;
+	height: 5px;
+	background: #f2622b;
+	display: block;
+	transition: 0.5s all ease-in-out;
+}
+.attorney:hover span {
+	width: 50px;
+}
+.attorney h1 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.attorney p {
+	color: #929dcf;
+	font-weight: 400;
+	font-size: 16px;
+}
+.attorney a {
+	color: #f2622c;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.designation {
+	position: absolute;
+	left: 20%;
+	top: 80%;
+	transition: 0.5s all ease-in-out;
+}
+
+.designation h2 {
+	color: #fff;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.image:hover .designation {
+	top: 75%;
+}
+
+.language:hover .heading span {
+	width: 50px;
+}
+
+.language h2 {
+	color: #204f87;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.language p {
+	font-weight: 300;
+	font-size: 16px;
+	color: #b1b0b1;
+}
+
+.language a {
+	color: #f2622c;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.contact {
+	background-color: #28377e;
+}
+
+.contact .heading h1 {
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.contact:hover .heading span {
+	width: 50px;
+}
+
+form {
+}
+form input {
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 1px solid rgb(201, 192, 192) !important;
+	border-radius: 0 !important;
+	caret-color: #fff;
+}
+
+form input::placeholder {
+	color: #fff !important;
+	font-weight: 300;
+}
+
+form input:focus {
+	box-shadow: none !important;
+}
+
+form textarea::placeholder {
+	color: #fff !important;
+	font-weight: 300;
+}
+
+form textarea:focus {
+	box-shadow: none !important;
+}
+
+form textarea {
+	background-color: transparent !important;
+	border: none !important;
+	border-bottom: 1px solid rgb(201, 192, 192) !important;
+	border-radius: 0 !important;
+	caret-color: #fff;
+}
+
+form input[type="submit"] {
+	border: none !important;
+	color: #fff;
+	background-color: #f2622c !important;
+	padding: 10px 50px;
+	border: 2px solid #f2622c !important;
+	transition: 0.5s all ease-in-out;
+}
+form input[type="submit"]:hover {
+	background-color: transparent !important;
+}
+
+footer {
+	background-color: #0c1334;
+	/* height: 100px; */
+	/* padding: 50px 0; */
+}
+
+footer p {
+	color: #616ca8;
+}
+footer ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+footer ul li {
+	padding-right: 5%;
+}
+footer ul li i {
+	color: #b1b8dd;
+	font-size: 20px;
+}
+footer ul li i:hover {
+	color: #cdd1e9;
+}
+footer .copyright {
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
